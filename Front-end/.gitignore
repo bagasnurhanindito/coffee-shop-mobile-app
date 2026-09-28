@@ -1,0 +1,42 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies (Akan mengabaikan node_modules di backend maupun Front-end)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+*.pem
+
+# IDE / Editor (VS Code dll)
+.vscode/
+.idea/
+
+# LOCAL ENV FILES (SANGAT KRUSIAL UNTUK BACKEND & MONGODB)
+.env
+.env.*
+!.env.example
